@@ -4,7 +4,7 @@ jobs:
     runs-on: ubuntu-latest
     permissions:
       packages: write
-    name: A job push docker
+    name: BuildnPush Docker
     steps:
       - name: Checkout
         uses: actions/checkout@v4
