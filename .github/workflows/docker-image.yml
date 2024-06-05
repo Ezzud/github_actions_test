@@ -23,6 +23,6 @@ jobs:
           push: true
           context: .
           file: ./Dockerfile
-          tags: ghcr.io/${{ REPO }}:latest
+          tags: ghcr.io/${{ env.REPO }}:latest
           secrets: |
             GIT_AUTH_TOKEN=${{ secrets.CR_PAT }}
